@@ -1,0 +1,97 @@
+<script setup>
+import { RouterLink, RouterView } from "vue-router";
+</script>
+
+<template>
+  <header>
+    <nav className="Nav">
+      <h2>DOUBLED</h2>
+      <ul className="list">
+        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/repos">MyRepos</RouterLink>
+      </ul>
+      <FaBars className="Hamburger" />
+    </nav>
+  </header>
+</template>
+
+<style scoped>
+.Nav h2 {
+  font-family: "Ojuju", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  color: #f05323;
+}
+.Nav {
+  display: flex;
+  align-items: center;
+  padding: 20px 90px 20px 90px;
+  justify-content: space-between;
+  background-color: #013440;
+}
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 25%;
+  justify-content: space-evenly;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-decoration: none;
+}
+.Hamburger {
+  color: #f05323;
+  display: none;
+  position: relative;
+  top: 2px;
+}
+@media screen and (max-width: 900px) {
+  .list {
+    width: 30%;
+  }
+  .Nav {
+    padding: 20px 70px 20px 70px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .list {
+    width: 35%;
+  }
+  .Nav {
+    padding: 20px 50px 20px 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Hamburger {
+    display: flex;
+  }
+  .list {
+    display: none;
+  }
+  .Nav {
+    padding: 20px 50px 20px 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .Hamburger {
+    display: flex;
+  }
+  .list {
+    display: none;
+  }
+  .Nav {
+    padding: 20px 30px 20px 30px;
+  }
+  .Nav h2 {
+    font-size: 20px;
+  }
+}
+</style>
