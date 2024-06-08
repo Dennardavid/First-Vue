@@ -1,6 +1,6 @@
 <template>
   <div class="fullpage error">
-    <img :src="Err404" alt="404" class="errorimg" />
+    <img src="../assets/pngwing.com.png" alt="404" class="errorimg" />
     <h2 class="errorheader">404</h2>
     <p>Ooops page not found....</p>
     <RouterLink to="/">
@@ -10,23 +10,17 @@
 </template>
 
 <script>
-import { useRouteError, RouterLink } from "vue-router";
-import Err404 from "../assets/pngwing.com.png";
+import { RouterLink } from "vue-router";
 
 export default {
   name: "ErrorPage",
-  setup() {
-    const error = useRouteError();
-    console.error(error);
-
-    return {
-      Err404,
-    };
-  },
 };
 </script>
 
 <style scoped>
+p {
+  font-family: "Poppins", sans-serif;
+}
 .fullpage {
   height: 100vh;
   display: flex;
@@ -46,6 +40,7 @@ export default {
   font-style: normal;
   color: #f05323;
 }
+
 @media screen and (max-width: 430px) {
   .errorimg {
     width: 30%;

@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import ErrorPage from "@/views/ErrorPage.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -19,11 +20,11 @@ const router = createRouter({
       name: "repodetails",
       component: () => import("../views/AboutView.vue"),
     },
-    /* {
+    {
       path: "/:catchAll(.*)",
       name: "error",
       component: ErrorPage,
-    }, */
+    },
   ],
 });
 

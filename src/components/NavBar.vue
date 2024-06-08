@@ -7,8 +7,12 @@ import { RouterLink, RouterView } from "vue-router";
     <nav className="Nav">
       <h2>DOUBLED</h2>
       <ul className="list">
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/repos">MyRepos</RouterLink>
+        <RouterLink to="/" v-slot="{ isActive }" class="nav-routes">
+          <li :class="['nav-routes', { active: isActive }]">Home</li>
+        </RouterLink>
+        <RouterLink to="/repos" v-slot="{ isActive }" class="nav-routes">
+          <li :class="['nav-routes', { active: isActive }]">MyRepos</li>
+        </RouterLink>
       </ul>
       <FaBars className="Hamburger" />
     </nav>
@@ -16,6 +20,15 @@ import { RouterLink, RouterView } from "vue-router";
 </template>
 
 <style scoped>
+.nav-routes {
+  text-decoration: none;
+  color: #fff;
+  text-decoration: none;
+}
+.active {
+  text-decoration: underline;
+  color: #f05323;
+}
 .Nav h2 {
   font-family: "Ojuju", sans-serif;
   font-optical-sizing: auto;

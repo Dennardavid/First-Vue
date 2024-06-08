@@ -1,3 +1,7 @@
+<script>
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+</script>
+
 <template>
   <footer className="footer">
     <h2>DOUBLED</h2>
@@ -5,17 +9,29 @@
     <ul className="footer-list">
       <li>
         <a href="https://github.com/Dennardavid" className="socials">
-          <FaGithub />
+          <img
+            src="../assets/github.svg"
+            alt="github"
+            style="height: 25px; color: white"
+          />
         </a>
       </li>
       <li>
         <a href="https://www.linkedin.com/in/david-dennar/" className="socials">
-          <FaLinkedin />
+          <img
+            src="../assets/linkedin.svg"
+            alt="github"
+            style="height: 25px; color: white"
+          />
         </a>
       </li>
       <li>
         <a href="https://twitter.com/dennar_david" className="socials">
-          <FaSquareXTwitter />
+          <img
+            src="../assets/x-twitter.svg"
+            alt="github"
+            style="height: 25px; color: white"
+          />
         </a>
       </li>
     </ul>

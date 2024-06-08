@@ -10,15 +10,27 @@
         <h1 class="repo-name">{{ details.name }}</h1>
         <div class="repo-mini-details">
           <p class="repo-stats">
-            <FaRegStar />
+            <img
+              src="../assets/star-solid.svg"
+              alt="github"
+              style="height: 15px; color: white"
+            />
             Stars: {{ details.stargazers_count }}
           </p>
           <p class="repo-stats">
-            <FaEye />
+            <img
+              src="../assets/eye-solid.svg"
+              alt="github"
+              style="height: 15px; color: white"
+            />
             Watch: {{ details.watchers }}
           </p>
           <p class="repo-stats">
-            <FaCodeFork />
+            <img
+              src="../assets/code-fork-solid.svg"
+              alt="github"
+              style="height: 15px; color: white"
+            />
             Forks: {{ details.forks }}
           </p>
         </div>

@@ -68,7 +68,12 @@ export default {
       >
         <article class="card">
           <div class="just">
-            <FaGithub class="justimg" />
+            <img
+              src="../assets/github.svg"
+              alt="github"
+              style="height: 25px; color: white"
+              class="justimg"
+            />
           </div>
           <h2 class="repoheader">{{ repoElement.name }}</h2>
           <p class="visibility">Visibility: {{ repoElement.visibility }}</p>

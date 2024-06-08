@@ -3,12 +3,10 @@ import { ref, onMounted } from "vue";
 import { RouterLink } from "vue-router";
 import NavBar from "../components/NavBar.vue";
 import Footer from "../components/Footer.vue";
-// import { FaGithub } from "vue-icons/fa6";
 
 export default {
   name: "RepoList",
   components: {
-    // FaGithub,
     NavBar,
     Footer,
   },
@@ -72,7 +70,11 @@ export default {
       >
         <article class="card">
           <div class="just">
-            <FaGithub class="justimg" />
+            <img
+              src="../assets/github.svg"
+              alt="github"
+              style="height: 25px; color: white"
+            />
           </div>
           <h2 class="repoheader">{{ repoElement.name }}</h2>
           <p class="visibility">Visibility: {{ repoElement.visibility }}</p>

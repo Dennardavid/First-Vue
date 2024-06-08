@@ -9,4 +9,3 @@ import HomeView from "./views/HomeView.vue";
   </body>
   <RouterView />
 </template>
-

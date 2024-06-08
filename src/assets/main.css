@@ -7,3 +7,24 @@
 #app {
   background-color: #e3e3e3;
 }
+.page_buttons {
+  background-color: #013440;
+  padding: 10px;
+  width: 200px;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+@media screen and (max-width: 400px) {
+  .page_buttons {
+    width: 40px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+}
