@@ -38,10 +38,6 @@
           Main Language:
           {{ details.language === null ? "none" : details.language }}
         </p>
-        <p>
-          License:
-          <!-- {{ details.license === null ? "none" : details.license.name }} -->
-        </p>
         <p>Date created: {{ details.created_at }}</p>
         <p>Visibility: {{ details.visibility }}</p>
 
